@@ -39,7 +39,7 @@ document
             ${noakhaliDonateAmount} Taka is Donated for flood at Noakhali, Bangladesh
           </h3>
           <p class="text-dark2 text-sm bg-slate-100 p-3 rounded-xl">
-            Date : ${new Date().toLocaleString()}
+            Date : ${new Date()}
           </p>
         </div>
     `;
