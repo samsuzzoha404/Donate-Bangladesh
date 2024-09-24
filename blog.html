@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Page</title>
+    <!-- google-fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- google-fonts -->
+    <!-- daisyUI cdn and tailwind cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- daisyUI cdn and tailwind cdn -->
+
+    <!-- font-awesome-cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- font-awesome-cdn -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#B4F461",
+              dark1: "#111111",
+              dark2: "rgba(17, 17, 17, 0.7)",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        font-family: "Lexend";
+      }
+    </style>
+  </head>
+  <body class="min-h-screen">
+    <header
+      class="shadow-md w-full sticky top-0 backdrop-filter backdrop-blur-lg bg-opacity-30"
+    >
+      <!-- navbar section start -->
+      <div class="bg-[rgb(249,247,243)]">
+        <nav
+          class="flex justify-between gap-4 items-center pt-5 pb-10 w-11/12 mx-auto"
+        >
+          <div>
+            <a
+              href="./index.html"
+              class="btn bg-primary text-dark1 hover:bg-primary px-6 text-lg"
+            >
+              Home
+            </a>
+          </div>
+          <div class="flex items-center justify-center gap-3">
+            <img src="/assets/logo.png" alt="" />
+            <h2 class="hidden md:block text-dark1 text-2xl font-semibold">
+              Donate Bangladesh
+            </h2>
+          </div>
+          <div class="flex items-center justify-center gap-3">
+            <img src="/assets/coin.png" alt="" />
+            <p class="text-dark2 text-lg font-medium">
+              <span id="my-amount" class="pr-1">20000</span>BDT
+            </p>
+          </div>
+        </nav>
+      </div>
+      <!-- navbar section end -->
+    </header>
+    <main class="w-11/12 mx-auto mt-12">
+      <section>
+        <div class="flex items-start gap-2">
+          <h2 class="font-bold text-3xl mb-8 text-dark1">Important FAQ</h2>
+          <i class="fa-regular fa-circle-question text-3xl"></i>
+        </div>
+        <div class="join join-vertical w-full">
+          <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" checked="checked" />
+            <div class="collapse-title text-lg font-medium text-dark1">
+              What is the Document Object Model(DOM)?
+            </div>
+            <div class="collapse-content text-dark2 space-y-2 text-sm">
+              <p>
+                1. The Document Object Model (DOM) is a programming interface
+                for web documents.
+              </p>
+              <p>
+                2. It represents the page so that programs can change the
+                document structure, style, and content.
+              </p>
+              <p>
+                3. The DOM represents the document as nodes and objects; that
+                way, programming languages can interact with the page.
+              </p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" />
+            <div class="collapse-title text-lg font-medium text-dark1">
+              How do you select an element from the DOM?
+            </div>
+            <div class="collapse-content text-dark2 space-y-2 text-sm">
+              <p>1. Using getElementById</p>
+              <p>2. Using getElementsByClassName</p>
+              <p>3. Using getElementsByTagName</p>
+              <p>4. Using querySelector</p>
+              <p>5. Using querySelectorAl</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" />
+            <div class="collapse-title text-lg font-medium text-dark1">
+              What is event delegation in the context of the DOM, and why is it
+              useful?
+            </div>
+            <div class="collapse-content text-dark2 space-y-2 text-sm">
+              <p>
+                Event delegation refers to the process of using event
+                propagation (bubbling) to handle events at a higher level in the
+                DOM than the element on which the event originated. It allows us
+                to attach a single event listener for elements that exist now or
+                in the future
+              </p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" />
+            <div class="collapse-title text-lg font-medium text-dark1">
+              How do you manipulate an elements attributes and styles using the
+              DOM?
+            </div>
+            <div class="collapse-content text-dark2 space-y-2 text-sm">
+              <p>
+                The classList object only provide methods to change the class of
+                an element. If you want to change other attributes like id ,
+                href , or src , you can use the setAttribute() method. The
+                setAttribute() method accepts two arguments: The name of the
+                attribute to set.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer
+      class="bg-[rgb(249,247,243)] mt-20 pt-36 sticky top-[100vh]"
+    ></footer>
+  </body>
+</html>
